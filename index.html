@@ -23,9 +23,23 @@
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-54J2HZK');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <!-- Body-->
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54J2HZK" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- 商品列表 -->
     <div class="page-title" id="#shoppingList">
       <div class="container">
@@ -276,7 +290,7 @@
       <div class="shopping-cart-footer">
         <div class="column"><a class="btn btn-outline-secondary" href="#shoppingList"><i
               class="icon-arrow-left"></i>&nbsp;Back to Shopping</a></div>
-        <div class="column"><a class="btn btn-success" href="#orderInfo"
+        <div class="column"><a id="checkoutBtn" class="btn btn-success" href="#orderInfo"
             >Checkout</a></div>
       </div>
     </div>
@@ -321,7 +335,7 @@
 
           <hr class="padding-bottom-1x">
           <div class="d-flex justify-content-between"><a class="btn btn-outline-secondary m-0" href="#cartList">Back To
-              Cart</a><a class="btn btn-primary m-0" href="#finish">Continue</a></div>
+              Cart</a><a id="continueBtn" class="btn btn-primary m-0" href="#finish">Continue</a></div>
         </div>
         <!-- Sidebar          -->
         <div class="col-xl-3 col-lg-4">
@@ -420,6 +434,6 @@
     </div>
 
 
-    <script src="./js/script.js"></script>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>

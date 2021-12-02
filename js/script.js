@@ -1,5 +1,6 @@
-(function() {
+import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
 
+(function() {
   const shoppingList = [
     {
       id: 0,
@@ -50,12 +51,15 @@
     email: '',
     address: ''
   }
+  const revenue = 0
 
   const cartbody = document.querySelector('#shoppingCartTbody')
   const clearCartBtn = document.querySelector('#clearCartBtn')
   const subTotalInCart = document.querySelector('#subTotalInCart')
   const subTotalInOrder = document.querySelector('#subTotalInOrder')
   const totalInOrder = document.querySelector('#totalInOrder')
+  const checkoutBtn = document.querySelector('#checkoutBtn')
+  const continueBtn = document.querySelector('#continueBtn')
   
   function initAddToCartBinding () {
     const addToCartBtnList = document.querySelectorAll('button[data-shopping-id]')
@@ -80,11 +84,25 @@
       removeCartItem(shoppingId, false)
       addToCartDOM(cartItem)
       cartList.push(cartItem)
+
+      addToCartEvent([{
+        name: cartItem.name,
+        id: cartItem.id,
+        price: cartItem.price,
+        quantity: cartItem.quantity
+      }])
     } else {
       const newCartItem = {...product,quantity: 1}
       cartList.push(newCartItem)
       countSubTotal()
       addToCartDOM(newCartItem)
+
+      addToCartEvent([{
+        name: newCartItem.name,
+        id: newCartItem.id,
+        price: newCartItem.price,
+        quantity: 1
+      }])
     }
   }
 
@@ -133,11 +151,30 @@
     subTotalInCart.innerHTML = `$${subTotal.toLocaleString('en-US')}`
     subTotalInOrder.innerHTML = `$${subTotal.toLocaleString('en-US')}`
     totalInOrder.innerHTML = `$${(subTotal + 20 + 10).toLocaleString('en-US')}`
+    revenue = subTotal
   }
 
   window.addEventListener('load', () => {
     initAddToCartBinding()
     initCartBinding()
 
+    browseProductList(shoppingList)
+    
+    checkoutBtn.addEventListener('click', () => {
+      checkout({ step: 1 }, cartList)
+    })
+    continueBtn.addEventListener('click', () => {
+      checkout({ step: 2 }, cartList)
+      setTimeout(() => {
+        checkout({ step: 3 }, cartList)
+        puchase({
+          id: Date.now(),
+          affiliation: '測試商店',
+          revenue ,                     // Total transaction value (incl. tax and shipping)
+          tax: 10,
+          shipping: 20,
+        },cartList)
+      }, 2000)
+    })
   })
 }())
