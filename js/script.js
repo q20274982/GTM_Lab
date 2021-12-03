@@ -51,7 +51,7 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
     email: '',
     address: ''
   }
-  const revenue = 0
+  let revenue = 0
 
   const cartbody = document.querySelector('#shoppingCartTbody')
   const clearCartBtn = document.querySelector('#clearCartBtn')
@@ -85,24 +85,24 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
       addToCartDOM(cartItem)
       cartList.push(cartItem)
 
-      addToCartEvent([{
+      pushToDataLayer(addToCartEvent([{
         name: cartItem.name,
         id: cartItem.id,
         price: cartItem.price,
         quantity: cartItem.quantity
-      }])
+      }]))
     } else {
       const newCartItem = {...product,quantity: 1}
       cartList.push(newCartItem)
       countSubTotal()
       addToCartDOM(newCartItem)
 
-      addToCartEvent([{
+      pushToDataLayer(addToCartEvent([{
         name: newCartItem.name,
         id: newCartItem.id,
         price: newCartItem.price,
         quantity: 1
-      }])
+      }]))
     }
   }
 
@@ -154,26 +154,30 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
     revenue = subTotal
   }
 
+  function pushToDataLayer (obj) {
+    dataLayer.push(obj)
+  }
+
   window.addEventListener('load', () => {
     initAddToCartBinding()
     initCartBinding()
 
-    browseProductList(shoppingList)
+    pushToDataLayer(browseProductList(shoppingList))
     
     checkoutBtn.addEventListener('click', () => {
-      checkout({ step: 1 }, cartList)
+      pushToDataLayer(checkout({ step: 1 }, cartList))
     })
     continueBtn.addEventListener('click', () => {
-      checkout({ step: 2 }, cartList)
+      pushToDataLayer(checkout({ step: 2 }, cartList))
       setTimeout(() => {
-        checkout({ step: 3 }, cartList)
-        puchase({
+        pushToDataLayer(checkout({ step: 3 }, cartList))
+        pushToDataLayer(puchase({
           id: Date.now(),
           affiliation: '測試商店',
           revenue ,                     // Total transaction value (incl. tax and shipping)
           tax: 10,
           shipping: 20,
-        },cartList)
+        },cartList))
       }, 2000)
     })
   })
