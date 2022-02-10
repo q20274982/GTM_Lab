@@ -1,6 +1,9 @@
+// 從 gtm.js 引入資源
 import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
 
+// IIFE + 主程式碼區塊
 (function() {
+  // 商品清單
   const shoppingList = [
     {
       id: 0,
@@ -44,15 +47,19 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
       imgUrl: 'img/shop/th08.jpg'
     },
   ]
+  // 購物車清單
   const cartList = []
+  // 訂單資訊
   const orderInfo = {
     firstName: '',
     LastName: '',
     email: '',
     address: ''
   }
+  // 訂單收入
   let revenue = 0
 
+  // 選取 index.html 內的 html tag 並轉為 DOM 物件
   const cartbody = document.querySelector('#shoppingCartTbody')
   const clearCartBtn = document.querySelector('#clearCartBtn')
   const subTotalInCart = document.querySelector('#subTotalInCart')
@@ -61,6 +68,7 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
   const checkoutBtn = document.querySelector('#checkoutBtn')
   const continueBtn = document.querySelector('#continueBtn')
   
+  // 監聽 加入購物車按鈕， 觸發時 執行 addToCart()
   function initAddToCartBinding () {
     const addToCartBtnList = document.querySelectorAll('button[data-shopping-id]')
     addToCartBtnList.forEach((el, idx) => {
@@ -68,10 +76,12 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
     })
   }
 
-  function initCartBinding () {
+  // 監聽 清除購物車按鈕， 觸發時 執行 clearCart()
+  function initClearCartBinding () {
     clearCartBtn.addEventListener('click', () => clearCart())
   }
 
+  // 加入購物車
   function addToCart (el) {
     const shoppingId = parseInt(el.dataset.shoppingId)
     const product = shoppingList[shoppingId]
@@ -106,6 +116,7 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
     }
   }
 
+  // 將 商品 渲染畫面在 購物車清單上
   function addToCartDOM ({ quantity, id, name, price, imgUrl }) {
     const amount = (quantity * price).toLocaleString('en-US')
     const tr = document.createElement('tr')
@@ -131,6 +142,7 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
 
   }
 
+  // 購物車內商品移除功能
   function removeCartItem (id, call = true) {
     cartList.splice(cartList.findIndex(x => x.id === id), 1)
     const cartItem = cartbody.querySelector(`#cartItem_${id}`)
@@ -139,12 +151,14 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
     countSubTotal()
   }
 
+  // 購物車清除功能
   function clearCart () {
     cartList.splice(0, cartList.length)
     cartbody.innerHTML = ''
     countSubTotal()
   }
 
+  // 金額計算功能
   function countSubTotal () {
     const subTotal = cartList.reduce((prev, curr) => prev + (curr.price * curr.quantity), 0)
 
@@ -154,27 +168,37 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
     revenue = subTotal
   }
 
+  // 推送至 GTM 的 dataLayer
   function pushToDataLayer (obj) {
     dataLayer.push(obj)
   }
 
+  // window 載入後執行
   window.addEventListener('load', () => {
+    // 初始化加入購物車按鈕行為
     initAddToCartBinding()
-    initCartBinding()
+    // 初始化清除購物車按鈕行為
+    initClearCartBinding()
 
+    // 推送 (GA商品瀏覽事件) 至 dataLayer
     pushToDataLayer(browseProductList(shoppingList))
     
+    // 監聽 確認結帳按鈕，觸發時 推送 (衡量結帳事件) 至 dataLayer
     checkoutBtn.addEventListener('click', () => {
       pushToDataLayer(checkout({ step: 1 }, cartList))
     })
+
+    // 監聽 繼續結帳按鈕，觸發時 推送 (衡量結帳事件) 至 dataLayer
     continueBtn.addEventListener('click', () => {
       pushToDataLayer(checkout({ step: 2 }, cartList))
+
+      // 2 秒後，推送 (衡量結帳事件)、(交易事件) 至 dataLayer
       setTimeout(() => {
         pushToDataLayer(checkout({ step: 3 }, cartList))
         pushToDataLayer(puchase({
           id: Date.now(),
           affiliation: '測試商店',
-          revenue ,                     // Total transaction value (incl. tax and shipping)
+          revenue , // Total transaction value (incl. tax and shipping)
           tax: 10,
           shipping: 20,
         },cartList))

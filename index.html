@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="utf-8">
-    <title>Unishop | Universal E-Commerce Template
-    </title>
+    <title>GA / GTM 電子商務網站追蹤練習</title>
     <!-- SEO Meta Tags-->
-    <meta name="description" content="Unishop - Universal E-Commerce Template">
-    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
-    <meta name="author" content="Rokaux">
+    <meta name="description" content="GA / GTM 電子商務網站追蹤練習">
+
     <!-- Mobile Specific Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Favicon and Apple Icons-->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+
     <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
     <link rel="stylesheet" media="screen" href="css/vendor.min.css">
     <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
-    <!-- Modernizr-->
-    <script src="js/modernizr.min.js"></script>
+
+    <!-- 按照 GTM 追蹤碼文件建議，在 <head> 區塊內的最後，插入 GTM 追蹤代碼 [在本行下方插入 GTM 追蹤代碼] -->
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
         w[l] = w[l] || []; w[l].push({
@@ -31,35 +23,41 @@
         }); var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'YOUR-GTM-CODE');</script>
+      })(window, document, 'script', 'dataLayer', 'GTM-54J2HZK');</script>
     <!-- End Google Tag Manager -->
+    <!-- [在本行上方插入 GTM 追蹤代碼] -->
   </head>
   <!-- Body-->
   <body>
+    <!-- 按照 GTM 追蹤碼文件建議，在 <body> 區塊內的開頭， 插入另一段 GTM 追蹤代碼 [在本行以下插入 GTM 追蹤代碼] -->
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=YOUR-GTM-CODE" height="0" width="0"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54J2HZK" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- 商品列表 -->
+    <!-- [在本行以上插入 GTM 追蹤代碼] -->
+
+
+
+    <!-- 商品列表 start  -->
     <div class="page-title" id="#shoppingList">
       <div class="container">
         <h1>商品清單</h1>
         <ul class="breadcrumbs">
-          <li><a >Home</a>
+          <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
-          <li>ShopList</li>
+          <li>商品列表</li>
         </ul>
       </div>
     </div>
     <section class="container-fluid padding-top-3x pb-5">
-      <h3 class="text-center mb-30">Featured Products</h3>
+      <h3 class="text-center mb-30">範例商品</h3>
       <div class="row">
-        <!-- Special Offer-->
+        <!-- 特色商品 -->
         <div class="col-xl-3 col-md-4">
           <div class="card pt-3 pb-2 mb-30">
             <div class="card-body text-center">
-              <h2>Special Offer <span class='text-danger'>-30%</span></h2><a class="d-inline-block" ><img src="img/shop/special-offer02.jpg" alt="Special Offer"></a>
+              <h2>特色商品<span class='text-danger'>-30%</span></h2><a class="d-inline-block" ><img src="img/shop/special-offer02.jpg" alt="Special Offer"></a>
               <h3 class="h5 text-normal pt-3"><a class="navi-link" >FLOS Indoor Lighting</a></h3>
               <del class="lead text-muted mr-2">$800.00</del><span class="h4 text-danger">$560.00</span>
               <div class="mt-4">
@@ -87,7 +85,7 @@
             <!-- Item-->
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <div class="product-card mb-30">
-                <div class="product-card-thumb"> <span class="product-badge text-danger">Sale</span><a class="product-card-link" ></a><img src="img/shop/th01.jpg" alt="Product">
+                <div class="product-card-thumb"> <span class="product-badge text-danger">特價</span><a class="product-card-link" ></a><img src="img/shop/th01.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
                     <button class="btn btn-primary btn-sm" data-toast data-shopping-id="0" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
@@ -178,7 +176,7 @@
             <!-- Item-->
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <div class="product-card mb-30">
-                <div class="product-card-thumb"> <span class="product-badge text-danger">Sale</span><a class="product-card-link" ></a><img src="img/shop/th10.jpg" alt="Product">
+                <div class="product-card-thumb"> <span class="product-badge text-danger">特價</span><a class="product-card-link" ></a><img src="img/shop/th10.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
                     <button class="btn btn-primary btn-sm" data-toast data-shopping-id="5" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
@@ -211,13 +209,14 @@
         </div>
       </div>
     </section>
+    <!-- 商品列表 end  -->
 
-    <!-- 購物車 -->
+    <!-- 購物車 start -->
     <div class="page-title" id="cartList">
       <div class="container">
         <h1>購物車</h1>
         <ul class="breadcrumbs">
-          <li><a >Home</a>
+          <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
           <li>Cart</li>
@@ -252,16 +251,17 @@
         <div class="column"><a class="btn btn-outline-secondary" href="#shoppingList"><i
               class="icon-arrow-left"></i>&nbsp;Back to Shopping</a></div>
         <div class="column"><a id="checkoutBtn" class="btn btn-success" href="#orderInfo"
-            >Checkout</a></div>
+            >確認結帳</a></div>
       </div>
     </div>
+    <!-- 購物車 end -->
 
-    <!-- 訂單填寫 -->
+    <!-- 訂單填寫 start -->
     <div class="page-title" id="orderInfo">
       <div class="container">
         <h1>訂單填寫</h1>
         <ul class="breadcrumbs">
-          <li><a >Home</a>
+          <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
           <li>Checkout - Address</li>
@@ -296,7 +296,7 @@
 
           <hr class="padding-bottom-1x">
           <div class="d-flex justify-content-between"><a class="btn btn-outline-secondary m-0" href="#cartList">Back To
-              Cart</a><a id="continueBtn" class="btn btn-primary m-0" href="#finish">Continue</a></div>
+              Cart</a><a id="continueBtn" class="btn btn-primary m-0" href="#finish">繼續結帳</a></div>
         </div>
         <!-- Sidebar          -->
         <div class="col-xl-3 col-lg-4">
@@ -364,13 +364,14 @@
         </div>
       </div>
     </div>
+    <!-- 訂單填寫 end -->
 
-    <!-- 結帳完成 -->
+    <!-- 結帳完成 start -->
     <div class="page-title" id="finish">
       <div class="container">
         <h1>Checkout - Complete</h1>
         <ul class="breadcrumbs">
-          <li><a >Home</a>
+          <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
           <li>Checkout - Complete</li>
@@ -393,8 +394,11 @@
         </div>
       </div>
     </div>
+    <!-- 結帳完成 end -->
 
-
+    <!-- 自定義 Javascript 區塊 start -->
     <script type="module" src="./js/script.js"></script>
+    <!-- 自定義 Javascript 區塊 end -->
+
   </body>
 </html>
