@@ -164,7 +164,7 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
 
     subTotalInCart.innerHTML = `$${subTotal.toLocaleString('en-US')}`
     subTotalInOrder.innerHTML = `$${subTotal.toLocaleString('en-US')}`
-    totalInOrder.innerHTML = `$${(subTotal + 20 + 10).toLocaleString('en-US')}`
+    totalInOrder.innerHTML = `$${(subTotal + 20).toLocaleString('en-US')}`
     revenue = subTotal
   }
 
@@ -199,7 +199,6 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
           id: Date.now(),
           affiliation: '測試商店',
           revenue , // Total transaction value (incl. tax and shipping)
-          tax: 10,
           shipping: 20,
         },cartList))
       }, 2000)

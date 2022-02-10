@@ -36,7 +36,73 @@
     <!-- End Google Tag Manager (noscript) -->
     <!-- [在本行以上插入 GTM 追蹤代碼] -->
 
-
+    <!-- 功能選單及工具列 start -->
+    <header class="navbar navbar-sticky">
+      <!-- Site Branding-->
+      <div class="site-branding">
+        <a class="site-logo hidden-xs-down">
+          <img src="img/logo/logo.png" alt="Unishop">
+        </a>
+        <a class="site-logo logo-sm hidden-sm-up">
+          <img src="img/logo/logo-sm.png" alt="Unishop">
+        </a>
+      </div>
+      <!-- Main Navigation-->
+      <nav class="site-menu">
+        <ul>
+          <li><a href="/"><span>最新活動</span></a>
+            <ul class="sub-menu">
+              <li><a href="/">最新活動一</a></li>
+              <li><a href="/">最新活動二</a></li>
+              <li><a href="/">最新活動三</a></li>
+              <li><a href="/">最新活動四 </a></li>
+            </ul>
+          </li>
+          <li><a href="/"><span>優惠活動</span></a>
+            <ul class="sub-menu">
+              <li><a href="/">優惠活動一</a></li>
+              <li><a href="/">優惠活動二</a></li>
+              <li><a href="/">優惠活動三</a></li>
+              <li><a href="/">優惠活動四 </a></li>
+            </ul>
+          </li>
+          <li><a href="/"><span>全部商品</span></a>
+            <ul class="sub-menu">
+              <li><a href="/">商品分類一</a></li>
+              <li><a href="/">商品分類二</a></li>
+              <li><a href="/">商品分類三</a></li>
+              <li><a href="/">商品分類四 </a></li>
+            </ul>
+          </li>
+          <li><a href="/"><span>新品專區</span></a>
+            <ul class="sub-menu">
+              <li><a href="/">新品專區一</a></li>
+              <li><a href="/">新品專區二</a></li>
+              <li><a href="/">新品專區三</a></li>
+              <li><a href="/">新品專區四 </a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <a class="toolbar-toggle mobile-menu-toggle" href="#mobileMenu">
+            <i class="material-icons menu"></i>
+          </a>
+          <a class="toolbar-toggle search-toggle" href="#search">
+            <i class="material-icons search"></i>
+          </a>
+          <a class="toolbar-toggle" href="#account">
+            <i class="material-icons person"></i>
+          </a>
+          <a class="toolbar-toggle" href="#cart">
+            <i><span class="material-icons shopping_basket"></span><span class="count">3</span></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- 功能選單及工具列 end -->
 
     <!-- 商品列表 start  -->
     <div class="page-title" id="#shoppingList">
@@ -63,16 +129,16 @@
               <div class="mt-4">
                 <div class="countdown countdown-alt" data-date-time="12/30/2019 12:00:00">
                   <div class="item">
-                    <div class="days">00</div><span class="days_ref">Days</span>
+                    <div class="days">00</div><span class="days_ref">天</span>
                   </div>
                   <div class="item">
-                    <div class="hours">00</div><span class="hours_ref">Hours</span>
+                    <div class="hours">00</div><span class="hours_ref">小時</span>
                   </div>
                   <div class="item">
-                    <div class="minutes">00</div><span class="minutes_ref">Mins</span>
+                    <div class="minutes">00</div><span class="minutes_ref">分鐘</span>
                   </div>
                   <div class="item">
-                    <div class="seconds">00</div><span class="seconds_ref">Secs</span>
+                    <div class="seconds">00</div><span class="seconds_ref">秒</span>
                   </div>
                 </div>
               </div>
@@ -88,7 +154,7 @@
                 <div class="product-card-thumb"> <span class="product-badge text-danger">特價</span><a class="product-card-link" ></a><img src="img/shop/th01.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="0" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="0" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -105,7 +171,7 @@
                 <div class="product-card-thumb"><a class="product-card-link" ></a><img src="img/shop/th05.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="1" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="1" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -120,7 +186,7 @@
                 <div class="product-card-thumb"><span class="product-rating text-warning"><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star_half"></i><i class="material-icons star_border"></i></span><a class="product-card-link" ></a><img src="img/shop/th16.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="2" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="2" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -132,7 +198,7 @@
             <!-- Item-->
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <div class="product-card mb-30">
-                <div class="product-card-thumb"><span class="product-badge text-muted">Out of stock</span><a class="product-card-link" ></a><img src="img/shop/th06.jpg" alt="Product">
+                <div class="product-card-thumb"><span class="product-badge text-muted">售罄</span><a class="product-card-link" ></a><img src="img/shop/th06.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button><a class="btn btn-white btn-sm" hre="#">View Details</a>
                   </div>
@@ -149,7 +215,7 @@
                 <div class="product-card-thumb"><a class="product-card-link" ></a><img src="img/shop/th09.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="3" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="3" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -164,7 +230,7 @@
                 <div class="product-card-thumb"><span class="product-rating text-warning"><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star"></i><i class="material-icons star_border"></i></span><a class="product-card-link" ></a><img src="img/shop/th08.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="4" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="4" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -179,7 +245,7 @@
                 <div class="product-card-thumb"> <span class="product-badge text-danger">特價</span><a class="product-card-link" ></a><img src="img/shop/th10.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="5" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="5" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -196,7 +262,7 @@
                 <div class="product-card-thumb"><a class="product-card-link" ></a><img src="img/shop/th13.jpg" alt="Product">
                   <div class="product-card-buttons">
                     <button class="btn btn-white btn-sm btn-wishlist" data-toggle="tooltip" title="Wishlist"><i class="material-icons favorite_border"></i></button>
-                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="6" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
+                    <button class="btn btn-primary btn-sm" data-toast data-shopping-id="6" data-toast-type="success" data-toast-position="topRight" data-toast-icon="material-icons check" data-toast-title="Product" data-toast-message="successfuly added to cart!">加入購物車</button>
                   </div>
                 </div>
                 <div class="product-card-details">
@@ -219,7 +285,7 @@
           <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
-          <li>Cart</li>
+          <li>購物車</li>
         </ul>
       </div>
     </div>
@@ -229,9 +295,9 @@
         <table class="table">
           <thead>
             <tr>
-              <th>Product Name</th>
-              <th class="text-center">Subtotal</th>
-              <th class="text-center"><a id="clearCartBtn" class="btn btn-sm btn-outline-danger">Clear Cart</a></th>
+              <th>商品名稱</th>
+              <th class="text-center">數量</th>
+              <th class="text-center"><a id="clearCartBtn" class="btn btn-sm btn-outline-danger">清除購物車</a></th>
             </tr>
           </thead>
           <tbody id="shoppingCartTbody">
@@ -241,15 +307,15 @@
       <div class="shopping-cart-footer">
         <div class="column">
           <form class="coupon-form" method="post">
-            <input class="form-control form-control-sm" type="text" placeholder="Coupon code" required>
-            <button class="btn btn-outline-primary btn-sm" type="submit">Apply Coupon</button>
+            <input class="form-control form-control-sm" type="text" placeholder="折扣碼" required>
+            <button class="btn btn-outline-primary btn-sm" type="submit">使用折扣碼</button>
           </form>
         </div>
-        <div class="column text-lg">Subtotal: <span class="text-medium text-dark" id="subTotalInCart"></span></div>
+        <div class="column text-lg">總計: <span class="text-medium text-dark" id="subTotalInCart"></span></div>
       </div>
       <div class="shopping-cart-footer">
         <div class="column"><a class="btn btn-outline-secondary" href="#shoppingList"><i
-              class="icon-arrow-left"></i>&nbsp;Back to Shopping</a></div>
+              class="icon-arrow-left"></i>&nbsp;回到商品列表</a></div>
         <div class="column"><a id="checkoutBtn" class="btn btn-success" href="#orderInfo"
             >確認結帳</a></div>
       </div>
@@ -264,7 +330,7 @@
           <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
-          <li>Checkout - Address</li>
+          <li>結帳 - 訂單資訊</li>
         </ul>
       </div>
     </div>
@@ -274,29 +340,28 @@
         <div class="col-xl-9 col-lg-8">
           <div class="steps flex-sm-nowrap mb-5">
             <a class="step active" >
-              <h4 class="step-title">1. Address</h4>
+              <h4 class="step-title">1. 訂單資訊</h4>
             </a>
           </div>
-          <h4>Billing Address</h4>
+          <h4>訂單收件人</h4>
           <hr class="padding-bottom-1x">
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
-                <label for="checkout-fn">First Name</label>
+                <label for="checkout-fn">名</label>
                 <input class="form-control" type="text" id="checkout-fn">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <label for="checkout-ln">Last Name</label>
+                <label for="checkout-ln">姓</label>
                 <input class="form-control" type="text" id="checkout-ln">
               </div>
             </div>
           </div>
 
           <hr class="padding-bottom-1x">
-          <div class="d-flex justify-content-between"><a class="btn btn-outline-secondary m-0" href="#cartList">Back To
-              Cart</a><a id="continueBtn" class="btn btn-primary m-0" href="#finish">繼續結帳</a></div>
+          <div class="d-flex justify-content-between"><a class="btn btn-outline-secondary m-0" href="#cartList">回到購物車</a><a id="continueBtn" class="btn btn-primary m-0" href="#finish">繼續結帳</a></div>
         </div>
         <!-- Sidebar          -->
         <div class="col-xl-3 col-lg-4">
@@ -304,19 +369,15 @@
             <div class="padding-top-2x hidden-lg-up"></div>
             <!-- Order Summary Widget-->
             <section class="widget widget-order-summary bg-secondary border-0 p-4">
-              <h3 class="widget-title">Order Summary</h3>
+              <h3 class="widget-title">訂單總計</h3>
               <table class="table text-sm mb-0">
                 <tr>
-                  <td>Cart Subtotal:</td>
+                  <td>商品金額:</td>
                   <td class="text-medium" id="subTotalInOrder"></td>
                 </tr>
                 <tr>
-                  <td>Shipping:</td>
+                  <td>物流費用:</td>
                   <td class="text-medium">$20</td>
-                </tr>
-                <tr>
-                  <td>Estimated tax:</td>
-                  <td class="text-medium">$10</td>
                 </tr>
                 <tr>
                   <td></td>
@@ -326,7 +387,7 @@
             </section>
             <!-- Featured Products Widget-->
             <section class="widget widget-featured-products border-0">
-              <h3 class="widget-title">Recently Viewed</h3>
+              <h3 class="widget-title">最近看過</h3>
               <!-- Entry-->
               <div class="entry">
                 <div class="entry-thumb"><a ><img src="img/shop/widget/01.png" alt="Product"></a>
@@ -369,32 +430,63 @@
     <!-- 結帳完成 start -->
     <div class="page-title" id="finish">
       <div class="container">
-        <h1>Checkout - Complete</h1>
+        <h1>訂單完成</h1>
         <ul class="breadcrumbs">
           <li><a >主頁</a>
           </li>
           <li class="separator">&nbsp;/&nbsp;</li>
-          <li>Checkout - Complete</li>
+          <li>結帳 - 完成</li>
         </ul>
       </div>
     </div>
     <div class="container padding-bottom-3x mb-2">
       <div class="card text-center border-default">
         <div class="card-body padding-top-2x">
-          <h3 class="card-title mb-4">Thank you for your order!</h3>
-          <p class="text-sm mb-2">Your order has been placed and will be processed as soon as possible.</p>
-          <p class="text-sm mb-2">Make sure you make note of your order number, which is <span
+          <h3 class="card-title mb-4">感謝您的購買!</h3>
+          <p class="text-sm mb-2">您的訂單編號: <span
               class="text-medium">34VB5540K83</span></p>
-          <p class="text-sm mb-2">You will be receiving an email shortly with confirmation of your order.
-            <u>You can now:</u>
-          </p>
-          <div class="padding-top-1x padding-bottom-1x"><a class="btn btn-outline-secondary" >Go
-              Back Shopping</a><a class="btn btn-outline-primary" ><i
-                class="material-icons my_location"></i>&nbsp;Track order</a></div>
+          <p class="text-sm mb-2">將在3個工作天內出貨!</p>
+          <div class="padding-top-1x padding-bottom-1x"><a class="btn btn-outline-secondary" >
+              回到商品首頁</a><a class="btn btn-outline-primary" ><i
+                class="material-icons my_location"></i>&nbsp;追蹤訂單</a></div>
         </div>
       </div>
     </div>
     <!-- 結帳完成 end -->
+
+    <!-- 頁尾 start -->
+    <footer class="site-footer">
+      <div class="column text-center">
+        <p class="text-sm mb-4">聯絡我們:<span class="text-primary">&nbsp;0800-000-321</span></p><a
+          class="social-button sb-skype" href="#" data-toggle="tooltip" data-placement="top" title="Skype"><i
+            class="socicon-skype"></i></a><a class="social-button sb-facebook" href="#" data-toggle="tooltip"
+          data-placement="top" title="Facebook"><i class="socicon-facebook"></i></a><a class="social-button sb-google-plus"
+          href="#" data-toggle="tooltip" data-placement="top" title="Google +"><i class="socicon-googleplus"></i></a><a
+          class="social-button sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+            class="socicon-twitter"></i></a><a class="social-button sb-instagram" href="#" data-toggle="tooltip"
+          data-placement="top" title="Instagram"><i class="socicon-instagram"></i></a>
+      </div>
+      <div class="column">
+        <h3 class="widget-title text-center">訂閱<small>接收最新消息及優惠</small></h3>
+        <form class="subscribe-form input-group"
+          action="//rokaux.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;id=1194bb7544" method="post"
+          target="_blank" novalidate><span class="input-group-btn">
+            <button type="submit"><i class="material-icons send"></i></button></span>
+          <input class="form-control" type="email" name="EMAIL" placeholder="輸入信箱">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1" value>
+          </div>
+        </form>
+      </div>
+      <div class="column">
+        <h3 class="widget-title text-center">付款方式<small>可使用電子支付或新用卡付款</small>
+        </h3>
+        <div class="footer-cards"><img src="img/cards.png" alt="Payment Methods">
+        </div>
+      </div>
+    </footer>
+    <!-- 頁尾 end -->
 
     <!-- 自定義 Javascript 區塊 start -->
     <script type="module" src="./js/script.js"></script>
