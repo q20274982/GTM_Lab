@@ -95,12 +95,29 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
       addToCartDOM(cartItem)
       cartList.push(cartItem)
 
-      pushToDataLayer(addToCartEvent([{
-        name: cartItem.name,
-        id: cartItem.id,
-        price: cartItem.price,
-        quantity: cartItem.quantity
-      }]))
+      // 1. 按照 GTM 文件提供的範例
+      dataLayer.push({
+        'event': 'addToCart',
+        'ecommerce': {
+          'currencyCode': 'TWD',
+          'add': {                                // 'add' actionFieldObject measures.
+            'products': [{                        //  adding a product to a shopping cart.
+              name: cartItem.name,
+              id: cartItem.id,
+              price: cartItem.price,
+              quantity: cartItem.quantity
+            }]
+          }
+        }
+      })
+      // 2. 使用封裝後的 addToCartEvent
+      // pushToDataLayer(addToCartEvent([{
+      //   name: cartItem.name,
+      //   id: cartItem.id,
+      //   price: cartItem.price,
+      //   quantity: cartItem.quantity
+      // }]))
+
     } else {
       const newCartItem = {...product,quantity: 1}
       cartList.push(newCartItem)
