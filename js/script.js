@@ -4,7 +4,7 @@ import {
   checkout,
   browseProductList,
   removeFromCartEvent,
-  puchase
+  purchase
 } from './gtm.js'
 
 // IIFE + 主程式碼區塊
@@ -74,6 +74,7 @@ import {
   const totalInOrder = document.querySelector('#totalInOrder')
   const checkoutBtn = document.querySelector('#checkoutBtn')
   const continueBtn = document.querySelector('#continueBtn')
+  const orderIdSpan = document.querySelector('#orderId')
   
   // 監聽 加入購物車按鈕， 觸發時 執行 addToCart()
   function initAddToCartBinding () {
@@ -195,6 +196,25 @@ import {
     countSubTotal()
   }
 
+  // 建立訂單
+  function createOrder () {
+    const orderId = Date.now()
+    orderIdSpan.innerText = orderId
+    
+    const actionField = {
+      id: orderId,
+      affiliation: 'Build School Lab Store',
+      revenue,
+      tax: 0,
+      shipping: 20
+    }
+    
+    pushToDataLayer(purchase({
+      actionField,
+      products: cartList
+    }))
+  }
+
   // 金額計算功能
   function countSubTotal () {
     const subTotal = cartList.reduce((prev, curr) => prev + (curr.price * curr.quantity), 0)
@@ -232,7 +252,7 @@ import {
       // 2 秒後，推送 (衡量結帳事件)、(交易事件) 至 dataLayer
       setTimeout(() => {
         pushToDataLayer(checkout({ step: 3 }, cartList))
-        pushToDataLayer(puchase({
+        pushToDataLayer(purchase({
           id: Date.now(),
           affiliation: '測試商店',
           revenue , // Total transaction value (incl. tax and shipping)

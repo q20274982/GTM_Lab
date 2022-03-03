@@ -113,7 +113,7 @@ export const removeFromCartEvent = (products = []) => {
     }
   }
 }
-export const puchase = (actionField, products) => {
+export const purchase = (actionField, products) => {
   return {
     ecommerce: {
       purchase: {
