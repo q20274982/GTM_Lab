@@ -1,5 +1,11 @@
 // 從 gtm.js 引入資源
-import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
+import {
+  addToCartEvent,
+  checkout,
+  browseProductList,
+  removeFromCartEvent,
+  puchase
+} from './gtm.js'
 
 // IIFE + 主程式碼區塊
 (function() {
@@ -162,9 +168,20 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
 
   // 購物車內商品移除功能
   function removeCartItem (id, call = true) {
-    cartList.splice(cartList.findIndex(x => x.id === id), 1)
+
     const cartItem = cartbody.querySelector(`#cartItem_${id}`)
     cartItem.remove()
+    
+    const cartItem = cartList.find(x => x.id == id)
+    
+    removeFromCartEvent({
+      name: cartItem.name,
+      id: cartItem.id,
+      price: cartItem.price
+    })
+    
+    cartList.splice(cartList.findIndex(x => x.id === id), 1)
+    
     if (!call) return
     countSubTotal()
   }
