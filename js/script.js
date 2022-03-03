@@ -174,11 +174,13 @@ import {
     
     const cartItem = cartList.find(x => x.id == id)
     
-    removeFromCartEvent({
-      name: cartItem.name,
-      id: cartItem.id,
-      price: cartItem.price
-    })
+    pushToDataLayer(
+      removeFromCartEvent({
+        name: cartItem.name,
+        id: cartItem.id,
+        price: cartItem.price
+      })
+    )
     
     cartList.splice(cartList.findIndex(x => x.id === id), 1)
     
