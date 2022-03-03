@@ -21,7 +21,6 @@ export const checkout = (actionField = {}, products = []) => {
 
 export const browseProductList = (impressions = []) => {
   return {
-    event: 'gtm.dom',
     'ecommerce': {
       currencyCode: 'TWD',
       impressions

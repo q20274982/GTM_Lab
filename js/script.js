@@ -7,44 +7,45 @@ import { addToCartEvent, checkout, browseProductList, puchase } from './gtm.js'
   const shoppingList = [
     {
       id: 0,
-      name: 'Storage Box',
-      price: 38
+      name: '餐椅,紅色',
+      price: 38,
+      imgUrl: 'img/sampleshop/chair.jpg'
     },
     {
       id: 1,
-      name: 'Lounge Chair',
+      name: '吊燈罩,黑色',
       price: 1420,
-      imgUrl: 'img/shop/th01.jpg'
+      imgUrl: 'img/sampleshop/chandelier.jpg'
     },
     {
       id: 2,
-      name: 'Navy Box',
+      name: '電競椅,米色',
       price: 75,
-      imgUrl: 'img/shop/th05.jpg'
+      imgUrl: 'img/sampleshop/gamechair.jpg'
     },
     {
       id: 3,
-      name: 'Campfire Table',
+      name: '邊桌,原木色',
       price: 1087,
-      imgUrl: 'img/shop/th16.jpg'
+      imgUrl: 'img/sampleshop/Sidetable.jpg'
     },
     {
       id: 4,
-      name: 'Tissue Holder',
+      name: '方枕,圓形 彩色',
       price: 76.4,
-      imgUrl: 'img/shop/th06.jpg'
+      imgUrl: 'img/sampleshop/squarepillow.jpg'
     },
     {
       id: 5,
-      name: 'Pendant Lamp',
+      name: '桌燈,米色/黑色',
       price: 27,
-      imgUrl: 'img/shop/th09.jpg'
+      imgUrl: 'img/sampleshop/tablelamp.jpg'
     },
     {
       id: 6,
-      name: 'Office Chair',
+      name: '水瓶,不鏽鋼/黃色',
       price: 329,
-      imgUrl: 'img/shop/th08.jpg'
+      imgUrl: 'img/sampleshop/Waterbottle.jpg'
     },
   ]
   // 購物車清單
