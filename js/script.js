@@ -4,7 +4,8 @@ import {
   checkout,
   browseProductList,
   removeFromCartEvent,
-  purchase
+  purchase,
+  browseProductDetail
 } from './gtm.js'
 
 // IIFE + 主程式碼區塊
@@ -84,6 +85,14 @@ import {
     })
   }
 
+  // 監聽 明細按鈕, 觸發時 執行 
+  function initViewOfDetailBinding () {
+    const viewOfDetailBtnList = document.querySelectorAll('button.detail')
+    viewOfDetailBtnList.forEach((el, idx) => {
+      el.addEventListener('click', () => viewOfDetail(el))
+    })
+  }
+
   // 監聽 清除購物車按鈕， 觸發時 執行 clearCart()
   function initClearCartBinding () {
     clearCartBtn.addEventListener('click', () => clearCart())
@@ -139,6 +148,17 @@ import {
         quantity: 1
       }]))
     }
+  }
+
+  function viewOfDetail (el) {
+  // 檢視明細
+  const detailId = parseInt(el.dataset.detailId)
+
+  const { name, id, price } = shoppingList.find(x => x.id == detailId)
+
+  pushToDataLayer(browseProductDetail([{
+    name, id, price
+  }]))
   }
 
   // 將 商品 渲染畫面在 購物車清單上
@@ -238,6 +258,8 @@ import {
     initAddToCartBinding()
     // 初始化清除購物車按鈕行為
     initClearCartBinding()
+
+    initViewOfDetailBinding()
 
     // 推送 (GA商品瀏覽事件) 至 dataLayer
     pushToDataLayer(browseProductList(shoppingList))
