@@ -115,6 +115,7 @@ export const removeFromCartEvent = (products = []) => {
 }
 export const purchase = (actionField, products) => {
   return {
+    event: 'purchase',
     ecommerce: {
       purchase: {
         actionField,
