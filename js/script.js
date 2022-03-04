@@ -170,8 +170,8 @@ import {
   // 購物車內商品移除功能
   function removeCartItem (id, call = true) {
 
-    const cartItem = cartbody.querySelector(`#cartItem_${id}`)
-    cartItem.remove()
+    const cartItemDom = cartbody.querySelector(`#cartItem_${id}`)
+    cartItemDom.remove()
     
     const cartItem = cartList.find(x => x.id == id)
     
@@ -209,10 +209,12 @@ import {
       shipping: 20
     }
     
-    pushToDataLayer(purchase({
+    const products = [ ...cartList ]
+    
+    pushToDataLayer(purchase(
       actionField,
-      products: cartList
-    }))
+      products
+    ))
   }
 
   // 金額計算功能
@@ -252,12 +254,7 @@ import {
       // 2 秒後，推送 (衡量結帳事件)、(交易事件) 至 dataLayer
       setTimeout(() => {
         pushToDataLayer(checkout({ step: 3 }, cartList))
-        pushToDataLayer(purchase({
-          id: Date.now(),
-          affiliation: '測試商店',
-          revenue , // Total transaction value (incl. tax and shipping)
-          shipping: 20,
-        },cartList))
+        createOrder()
       }, 2000)
     })
   })
