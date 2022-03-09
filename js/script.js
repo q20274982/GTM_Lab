@@ -268,14 +268,13 @@ import {
     checkoutBtn.addEventListener('click', () => {
       pushToDataLayer(checkout({ step: 1 }, cartList))
     })
-
+    
     // 監聽 繼續結帳按鈕，觸發時 推送 (衡量結帳事件) 至 dataLayer
     continueBtn.addEventListener('click', () => {
-      pushToDataLayer(checkout({ step: 2 }, cartList))
-
+      pushToDataLayer(checkout({ step: 2 }))
       // 2 秒後，推送 (衡量結帳事件)、(交易事件) 至 dataLayer
       setTimeout(() => {
-        pushToDataLayer(checkout({ step: 3 }, cartList))
+        pushToDataLayer(checkout({ step: 3 }))
         createOrder()
       }, 2000)
     })
