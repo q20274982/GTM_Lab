@@ -1,168 +1,29 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2022-02-15 10:02:38",
+    "exportTime": "2022-03-21 10:34:30",
     "containerVersion": {
-        "path": "accounts/6005441591/containers/55424133/versions/0",
-        "accountId": "6005441591",
-        "containerId": "55424133",
+        "path": "accounts/6006242618/containers/61006106/versions/0",
+        "accountId": "6006242618",
+        "containerId": "61006106",
         "containerVersionId": "0",
         "container": {
-            "path": "accounts/6005441591/containers/55424133",
-            "accountId": "6005441591",
-            "containerId": "55424133",
-            "name": "www.bslab.com",
-            "publicId": "GTM-54J2HZK",
+            "path": "accounts/6006242618/containers/61006106",
+            "accountId": "6006242618",
+            "containerId": "61006106",
+            "name": "ITI課程-預習",
+            "publicId": "GTM-KQJ82KL",
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1638344060296",
-            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6005441591/containers/55424133/workspaces?apiLink=container"
+            "fingerprint": "1647845535012",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6006242618/containers/61006106/workspaces?apiLink=container",
+            "mode": "FULL"
         },
         "tag": [
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "49",
-                "name": "標準電子商務",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_TRANSACTION"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    }
-                ],
-                "fingerprint": "1638502928240",
-                "firingTriggerId": [
-                    "48"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "50",
-                "name": "商品展示、商品詳情查看、促銷展示事件",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "useEcommerceDataLayer",
-                        "value": "true"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_PAGEVIEW"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableEcommerce",
-                        "value": "true"
-                    }
-                ],
-                "fingerprint": "1638502928240",
-                "firingTriggerId": [
-                    "48"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "55",
-                "name": "商品點擊事件",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "nonInteraction",
-                        "value": "false"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "useEcommerceDataLayer",
-                        "value": "true"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventCategory",
-                        "value": "Ecommerce"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_EVENT"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventAction",
-                        "value": "Product Click"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableEcommerce",
-                        "value": "true"
-                    }
-                ],
-                "fingerprint": "1638502928242",
-                "firingTriggerId": [
-                    "54"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "58",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "12",
                 "name": "衡量購買",
                 "type": "ua",
                 "parameter": [
@@ -192,10 +53,11 @@
                         "value": "true"
                     }
                 ],
-                "fingerprint": "1638502928243",
+                "fingerprint": "1647858736188",
                 "firingTriggerId": [
-                    "48"
+                    "37"
                 ],
+                "parentFolderId": "39",
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
                     "type": "MAP"
@@ -205,69 +67,9 @@
                 }
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "65",
-                "name": "購物車加入事件",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "nonInteraction",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "useEcommerceDataLayer",
-                        "value": "true"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventCategory",
-                        "value": "{{Ecommerce}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_EVENT"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "eventAction",
-                        "value": "AddToCart"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableEcommerce",
-                        "value": "true"
-                    }
-                ],
-                "fingerprint": "1638502928245",
-                "firingTriggerId": [
-                    "51"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "67",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "15",
                 "name": "促銷點擊事件",
                 "type": "ua",
                 "parameter": [
@@ -312,10 +114,11 @@
                         "value": "true"
                     }
                 ],
-                "fingerprint": "1638502928246",
+                "fingerprint": "1647858736191",
                 "firingTriggerId": [
-                    "59"
+                    "13"
                 ],
+                "parentFolderId": "39",
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
                     "type": "MAP"
@@ -325,10 +128,10 @@
                 }
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "69",
-                "name": "購物車移除事件",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "17",
+                "name": "商品點擊事件",
                 "type": "ua",
                 "parameter": [
                     {
@@ -349,7 +152,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "eventCategory",
-                        "value": "{{Ecommerce}}"
+                        "value": "Ecommerce"
                     },
                     {
                         "type": "TEMPLATE",
@@ -364,7 +167,7 @@
                     {
                         "type": "TEMPLATE",
                         "key": "eventAction",
-                        "value": "RemovefromCart"
+                        "value": "Product Click"
                     },
                     {
                         "type": "BOOLEAN",
@@ -372,10 +175,11 @@
                         "value": "true"
                     }
                 ],
-                "fingerprint": "1638502928247",
+                "fingerprint": "1647858736193",
                 "firingTriggerId": [
-                    "53"
+                    "16"
                 ],
+                "parentFolderId": "39",
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
                     "type": "MAP"
@@ -385,136 +189,9 @@
                 }
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "70",
-                "name": "追蹤SPA換頁",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "true"
-                    },
-                    {
-                        "type": "LIST",
-                        "key": "fieldsToSet",
-                        "list": [
-                            {
-                                "type": "MAP",
-                                "map": [
-                                    {
-                                        "type": "TEMPLATE",
-                                        "key": "fieldName",
-                                        "value": "page"
-                                    },
-                                    {
-                                        "type": "TEMPLATE",
-                                        "key": "value",
-                                        "value": "{{New History Fragment}}"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_PAGEVIEW"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    }
-                ],
-                "fingerprint": "1638502928247",
-                "firingTriggerId": [
-                    "62"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "71",
-                "name": "GA-PageView",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_PAGEVIEW"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    }
-                ],
-                "fingerprint": "1638502928247",
-                "firingTriggerId": [
-                    "2147479553",
-                    "46"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "73",
-                "name": "Google Analytics (分析)-通用 Analytics (分析)",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "false"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_PAGEVIEW"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    }
-                ],
-                "fingerprint": "1638502928248",
-                "firingTriggerId": [
-                    "52"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "tagId": "74",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "18",
                 "name": "結帳漏斗流程事件",
                 "type": "ua",
                 "parameter": [
@@ -559,10 +236,298 @@
                         "value": "true"
                     }
                 ],
-                "fingerprint": "1638502928248",
+                "fingerprint": "1647858736194",
                 "firingTriggerId": [
-                    "63"
+                    "9"
                 ],
+                "parentFolderId": "39",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "22",
+                "name": "GA-PageView",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useEcommerceDataLayer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA-Code}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1647858736190",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "39",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "24",
+                "name": "商品展示、商品詳情查看、促銷展示事件",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useEcommerceDataLayer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA-Code}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1647858736191",
+                "firingTriggerId": [
+                    "21",
+                    "38"
+                ],
+                "parentFolderId": "39",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "26",
+                "name": "標準電子商務",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_TRANSACTION"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA-Code}}"
+                    }
+                ],
+                "fingerprint": "1647858736192",
+                "firingTriggerId": [
+                    "11"
+                ],
+                "parentFolderId": "39",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "33",
+                "name": "Google Analytics (分析)-通用 Analytics (分析)",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA-Code}}"
+                    }
+                ],
+                "fingerprint": "1647858736193",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "parentFolderId": "39",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "34",
+                "name": "購物車加入事件",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useEcommerceDataLayer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "{{Ecommerce}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA-Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "AddToCart"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1647858736195",
+                "firingTriggerId": [
+                    "5"
+                ],
+                "parentFolderId": "39",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "tagId": "35",
+                "name": "購物車移除事件",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "nonInteraction",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useEcommerceDataLayer",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventCategory",
+                        "value": "{{Ecommerce}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_EVENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{UA-Code}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventAction",
+                        "value": "RemovefromCart"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "true"
+                    }
+                ],
+                "fingerprint": "1647858736223",
+                "firingTriggerId": [
+                    "23"
+                ],
+                "parentFolderId": "39",
                 "tagFiringOption": "ONCE_PER_EVENT",
                 "monitoringMetadata": {
                     "type": "MAP"
@@ -574,50 +539,9 @@
         ],
         "trigger": [
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "45",
-                "name": "browseGoodsDetailSite",
-                "type": "WINDOW_LOADED",
-                "filter": [
-                    {
-                        "type": "MATCH_REGEX",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Page Path}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "/\\/products\\/(\\d*)"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928238"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "46",
-                "name": "視窗已載入",
-                "type": "WINDOW_LOADED",
-                "fingerprint": "1638502928239"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "48",
-                "name": "gtm.dom",
-                "type": "DOM_READY",
-                "fingerprint": "1638502928240"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "51",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "5",
                 "name": "addToCart",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
@@ -637,12 +561,13 @@
                         ]
                     }
                 ],
-                "fingerprint": "1638502928241"
+                "fingerprint": "1647858736233",
+                "parentFolderId": "39"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "52",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "8",
                 "name": "content-view",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
@@ -662,170 +587,13 @@
                         ]
                     }
                 ],
-                "fingerprint": "1638502928241"
+                "fingerprint": "1647858736226",
+                "parentFolderId": "39"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "53",
-                "name": "removeFromCart",
-                "type": "CUSTOM_EVENT",
-                "customEventFilter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{_event}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "removeFromCart"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928241"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "54",
-                "name": "productClick",
-                "type": "CUSTOM_EVENT",
-                "customEventFilter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{_event}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "productClick"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928242"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "56",
-                "name": "browseCartSite",
-                "type": "WINDOW_LOADED",
-                "filter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Page Path}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "/cart"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928242"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "57",
-                "name": "createOrder",
-                "type": "WINDOW_LOADED",
-                "filter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Page Path}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "/Checkout/Finish"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928243"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "59",
-                "name": "promotionClick",
-                "type": "CUSTOM_EVENT",
-                "customEventFilter": [
-                    {
-                        "type": "EQUALS",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{_event}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "promotionClick"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928243"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "61",
-                "name": "browseHomeSiteLongUrl",
-                "type": "WINDOW_LOADED",
-                "filter": [
-                    {
-                        "type": "STARTS_WITH",
-                        "parameter": [
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg0",
-                                "value": "{{Page Path}}"
-                            },
-                            {
-                                "type": "TEMPLATE",
-                                "key": "arg1",
-                                "value": "/Home/Index"
-                            }
-                        ]
-                    }
-                ],
-                "fingerprint": "1638502928244"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "62",
-                "name": "紀錄變更",
-                "type": "HISTORY_CHANGE",
-                "fingerprint": "1638502928244"
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "63",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "9",
                 "name": "checkout",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
@@ -845,12 +613,144 @@
                         ]
                     }
                 ],
-                "fingerprint": "1638502928245"
+                "fingerprint": "1647858736227",
+                "parentFolderId": "39"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "66",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "11",
+                "name": "gtm.dom",
+                "type": "DOM_READY",
+                "fingerprint": "1647858736228",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "13",
+                "name": "promotionClick",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "promotionClick"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736226",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "16",
+                "name": "productClick",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "productClick"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736229",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "19",
+                "name": "browseGoodsDetailSite",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/\\/products\\/(\\d*)"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736229",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "20",
+                "name": "紀錄變更",
+                "type": "HISTORY_CHANGE",
+                "fingerprint": "1647858736229",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "21",
+                "name": "視窗已載入",
+                "type": "WINDOW_LOADED",
+                "fingerprint": "1647858736231",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "23",
+                "name": "removeFromCart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "removeFromCart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736230",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "25",
                 "name": "browseCategorySite",
                 "type": "WINDOW_LOADED",
                 "filter": [
@@ -870,12 +770,39 @@
                         ]
                     }
                 ],
-                "fingerprint": "1638502928246"
+                "fingerprint": "1647858736230",
+                "parentFolderId": "39"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "triggerId": "68",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "27",
+                "name": "createOrder",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/Checkout/Finish"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736231",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "28",
                 "name": "browseHomeSite",
                 "type": "WINDOW_LOADED",
                 "filter": [
@@ -895,14 +822,119 @@
                         ]
                     }
                 ],
-                "fingerprint": "1638502928246"
+                "fingerprint": "1647858736232",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "32",
+                "name": "browseCartSite",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/cart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736232",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "36",
+                "name": "browseHomeSiteLongUrl",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "STARTS_WITH",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Path}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "/Home/Index"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736233",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "37",
+                "name": "purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736224",
+                "parentFolderId": "39"
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "triggerId": "38",
+                "name": "viewProductDetail",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "viewProductDetail"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1647858736227",
+                "parentFolderId": "39"
             }
         ],
         "variable": [
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "variableId": "47",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "variableId": "10",
                 "name": "UA-Code",
                 "type": "gas",
                 "parameter": [
@@ -954,15 +986,33 @@
                     {
                         "type": "TEMPLATE",
                         "key": "trackingId",
-                        "value": "UA-213956355-1"
+                        "value": "UA-223443636-1"
                     }
                 ],
-                "fingerprint": "1638503027832"
+                "fingerprint": "1647858736234",
+                "parentFolderId": "39"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "variableId": "60",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "variableId": "14",
+                "name": "Ecommerce",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "Ecommerce"
+                    }
+                ],
+                "fingerprint": "1647858736235",
+                "parentFolderId": "39",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "variableId": "29",
                 "name": "Page Title",
                 "type": "v",
                 "parameter": [
@@ -982,29 +1032,14 @@
                         "value": "pageTitle"
                     }
                 ],
-                "fingerprint": "1638502928244",
+                "fingerprint": "1647858736234",
+                "parentFolderId": "39",
                 "formatValue": {}
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "variableId": "64",
-                "name": "Ecommerce",
-                "type": "c",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "value",
-                        "value": "Ecommerce"
-                    }
-                ],
-                "fingerprint": "1638502928245",
-                "formatValue": {}
-            },
-            {
-                "accountId": "6005441591",
-                "containerId": "55424133",
-                "variableId": "72",
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "variableId": "30",
                 "name": "Ecommerce Transaction",
                 "type": "c",
                 "parameter": [
@@ -1014,103 +1049,113 @@
                         "value": "Ecommerce Transaction"
                     }
                 ],
-                "fingerprint": "1638502928248",
+                "fingerprint": "1647858736235",
+                "parentFolderId": "39",
                 "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6006242618",
+                "containerId": "61006106",
+                "folderId": "39",
+                "name": "通用分析",
+                "fingerprint": "1647858651605"
             }
         ],
         "builtInVariable": [
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "PAGE_URL",
                 "name": "Page URL"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "PAGE_HOSTNAME",
                 "name": "Page Hostname"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "PAGE_PATH",
                 "name": "Page Path"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "REFERRER",
                 "name": "Referrer"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "EVENT",
                 "name": "Event"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "NEW_HISTORY_FRAGMENT",
                 "name": "New History Fragment"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "OLD_HISTORY_FRAGMENT",
                 "name": "Old History Fragment"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "NEW_HISTORY_STATE",
                 "name": "New History State"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "OLD_HISTORY_STATE",
                 "name": "Old History State"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "HISTORY_SOURCE",
                 "name": "History Source"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "CONTAINER_VERSION",
                 "name": "Container Version"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "RANDOM_NUMBER",
                 "name": "Random Number"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "CONTAINER_ID",
                 "name": "Container ID"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "HTML_ID",
                 "name": "HTML ID"
             },
             {
-                "accountId": "6005441591",
-                "containerId": "55424133",
+                "accountId": "6006242618",
+                "containerId": "61006106",
                 "type": "ENVIRONMENT_NAME",
                 "name": "Environment Name"
             }
         ],
-        "fingerprint": "1644919358526",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6005441591/containers/55424133/versions/0?apiLink=version"
+        "fingerprint": "1647858870398",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6006242618/containers/61006106/versions/0?apiLink=version"
     }
 }
