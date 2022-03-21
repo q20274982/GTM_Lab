@@ -1,4 +1,4 @@
-export const checkout = (actionField = {}, products = []) => {
+export const checkout = (actionField = {}, products = null) => {
   return {
     event: 'checkout',
     ecommerce: {
@@ -41,6 +41,7 @@ export const browseProductList = (impressions = []) => {
 
 export const browseProductDetail = (products = []) => {
   return {
+    event: 'viewProductDetail',
     ecommerce: {
       detail: {
         // 'actionField': {'list': 'Apparel Gallery'},    // 'detail' actions have an optional list property.

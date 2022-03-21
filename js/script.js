@@ -249,6 +249,7 @@ import {
 
   // 推送至 GTM 的 dataLayer
   function pushToDataLayer (obj) {
+    dataLayer.push({ ecommerce: null })
     dataLayer.push(obj)
   }
 
@@ -262,7 +263,7 @@ import {
     initViewOfDetailBinding()
 
     // 推送 (GA商品瀏覽事件) 至 dataLayer
-    pushToDataLayer(browseProductList(shoppingList))
+    pushToDataLayer(browseProductList(shoppingList.map(({ imgUrl, ...el }) => ({ ...el }))))
     
     // 監聽 確認結帳按鈕，觸發時 推送 (衡量結帳事件) 至 dataLayer
     checkoutBtn.addEventListener('click', () => {
