@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2022-03-24 04:43:13",
+    "exportTime": "2022-03-24 04:39:12",
     "containerVersion": {
         "path": "accounts/6006242618/containers/61006106/versions/0",
         "accountId": "6006242618",
@@ -20,52 +20,6 @@
             "mode": "FULL"
         },
         "tag": [
-            {
-                "accountId": "6006242618",
-                "containerId": "61006106",
-                "tagId": "12",
-                "name": "衡量購買",
-                "type": "ua",
-                "parameter": [
-                    {
-                        "type": "BOOLEAN",
-                        "key": "overrideGaSettings",
-                        "value": "true"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "useEcommerceDataLayer",
-                        "value": "true"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "trackType",
-                        "value": "TRACK_PAGEVIEW"
-                    },
-                    {
-                        "type": "TEMPLATE",
-                        "key": "gaSettings",
-                        "value": "{{UA-Code}}"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "enableEcommerce",
-                        "value": "true"
-                    }
-                ],
-                "fingerprint": "1647858736188",
-                "firingTriggerId": [
-                    "37"
-                ],
-                "parentFolderId": "39",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
             {
                 "accountId": "6006242618",
                 "containerId": "61006106",
@@ -1155,7 +1109,7 @@
                 "name": "Environment Name"
             }
         ],
-        "fingerprint": "1648096993789",
+        "fingerprint": "1648096752055",
         "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6006242618/containers/61006106/versions/0?apiLink=version"
     }
 }
